@@ -176,7 +176,7 @@ function App() {
             <Switch>
               <Route
                 exact
-                path='/space-project'
+                path='/'
                 render={(props) => (
                   <Fragment>
                     <Imageofday
@@ -191,7 +191,7 @@ function App() {
               ></Route>
               <Route
                 exact
-                path='/space-project/mars-weather'
+                path='/mars-weather'
                 render={(props) => (
                   <Marsweatherfinder
                     marsload={marsload}
@@ -202,12 +202,12 @@ function App() {
               ></Route>
               <Route
                 exact
-                path='/space-project/natural-event'
+                path='/natural-event'
                 component={Naturaleventfinder}
               ></Route>
               <Route
                 exact
-                path='/space-project/gallery/:imgid'
+                path='/gallery/:imgid'
                 render={(props) => (
                   <Nasaimg
                     {...props}
@@ -219,7 +219,7 @@ function App() {
               ></Route>
               <Route
                 exact
-                path='/space-project/gallery'
+                path='/gallery'
                 render={(props) => {
                   return (
                     <Galleryhome
@@ -233,7 +233,7 @@ function App() {
                   );
                 }}
               ></Route>
-              <Route exact path='/space-project/about' component={About} />
+              <Route exact path='/about' component={About} />
             </Switch>
           </div>
         </Fragment>

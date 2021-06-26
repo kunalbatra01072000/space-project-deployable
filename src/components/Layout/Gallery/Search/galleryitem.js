@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Galleryitem = ({ imginfo }) => {
   return (
@@ -7,13 +7,13 @@ const Galleryitem = ({ imginfo }) => {
       <img
         src={imginfo.imgurl}
         alt='search_img'
-        style={{ maxHeight: '300px' }}
+        style={{ maxHeight: "300px" }}
       ></img>
 
       <strong>{imginfo.imgtitle}</strong>
       <div>
         <Link
-          to={`/space-project/gallery/${imginfo.imgid}`}
+          to={`/gallery/${imginfo.imgid}`}
           className='btn btn-dark my-1 btn-sm'
         >
           More Info

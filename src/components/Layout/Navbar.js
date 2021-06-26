@@ -9,32 +9,32 @@ const Navbar = () => {
   };
   const hidenav = () => setshowdrop(false);
   const dropdown = (
-    <div className="text-center dropdown ">
+    <div className='text-center dropdown '>
       <ul>
         <li>
-          <Link to="/space-project/" onClick={hidenav}>
+          <Link to='/' onClick={hidenav}>
             Home
           </Link>
         </li>
         <li>
           {" "}
-          <Link to="/space-project/mars-weather" onClick={hidenav}>
+          <Link to='/mars-weather' onClick={hidenav}>
             Mars weather
           </Link>
         </li>
         <li>
           {" "}
-          <Link to="/space-project/natural-event" onClick={hidenav}>
+          <Link to='/natural-event' onClick={hidenav}>
             Recent Disasters
           </Link>
         </li>
         <li>
-          <Link to="/space-project/gallery" onClick={hidenav}>
+          <Link to='/gallery' onClick={hidenav}>
             Gallery
           </Link>
         </li>
         <li>
-          <Link to="/space-project/about" onClick={hidenav}>
+          <Link to='/about' onClick={hidenav}>
             About
           </Link>
         </li>
@@ -44,37 +44,37 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <nav className="navbar bg-dark ">
+      <nav className='navbar bg-dark '>
         <img
           src={logo}
-          alt=""
+          alt=''
           style={{ width: "100px", marginRight: "1rem" }}
         />
         <ul>
           <li>
-            <Link to="/space-project/">Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to="/space-project/mars-weather">Mars weather</Link>
+            <Link to='/mars-weather'>Mars weather</Link>
           </li>
 
           <li>
-            <Link to="/space-project/natural-event">Recent Disasters</Link>
+            <Link to='/natural-event'>Recent Disasters</Link>
           </li>
           <li>
-            <Link to="/space-project/gallery">Gallery</Link>
+            <Link to='/gallery'>Gallery</Link>
           </li>
           <li>
-            <Link to="/space-project/about">About</Link>
+            <Link to='/about'>About</Link>
           </li>
         </ul>
       </nav>
-      <div className="menu-icon ">
-        <div className="mobile-nav" style={{ position: "relative" }}>
+      <div className='menu-icon '>
+        <div className='mobile-nav' style={{ position: "relative" }}>
           <img
             src={Menuicon}
-            alt="Menu"
-            className="menu-img-icon"
+            alt='Menu'
+            className='menu-img-icon'
             onClick={onClick}
             style={{
               display: "block",
@@ -84,7 +84,7 @@ const Navbar = () => {
           />
           <img
             src={logo}
-            alt=""
+            alt=''
             style={{
               width: "50px",
               display: "block",
@@ -92,7 +92,7 @@ const Navbar = () => {
               top: "7%",
               left: "45%",
             }}
-            className=""
+            className=''
           />
         </div>
         {showdrop && dropdown}
